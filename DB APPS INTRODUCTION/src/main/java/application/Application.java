@@ -11,7 +11,7 @@ public class Application {
 
     public static void main(String[] args) throws SQLException {
         String user = "root";
-        String password = "America891115";
+        String password = "";
 
         Properties properties = new Properties();
         properties.setProperty("user", user);
