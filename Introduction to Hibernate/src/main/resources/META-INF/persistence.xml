@@ -5,13 +5,15 @@
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
 
-    <persistence-unit name="PersistenceUnit">
+    <persistence-unit name="soft_uni">
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:PORT/soft_uni?createDatabaseIfNotExist=true&amp;useSSL=false" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/soft_uni?createDatabaseIfNotExist=true&amp;useSSL=false" />
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
-            <property name="hibernate.connection.username" value="USERNAME_FOR_DATABASE"/>
-            <property name="hibernate.connection.password" value="PASSWORD_FOR_DATABASE_USER"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="America891115"/>
+            <property name = "hibernate.show_sql" value = "true" />
+            <property name = "hibernate." value = "true" />
         </properties>
     </persistence-unit>
 </persistence>
